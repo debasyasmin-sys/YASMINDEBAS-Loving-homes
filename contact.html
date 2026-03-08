@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تواصل معنا - Loving Homes</title>
+<meta name="description" content="تواصل مع Loving Homes فندق الكلاب الفاخر في هونغ كونغ. اتصل بنا أو أرسل بريدًا إلكترونيًا أو قم بزيارة منشأتنا للتعرف على خدماتنا.">
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+<div class="nav-container">
+
+<div class="nav-logo">
+<i class="fas fa-paw"></i>
+<span>Loving Homes</span>
+</div>
+
+<ul class="nav-menu">
+
+<li class="nav-item">
+<a href="index.html" class="nav-link">الرئيسية</a>
+</li>
+
+<li class="nav-item">
+<a href="about.html" class="nav-link">من نحن وما خدماتنا </a>
+</li>
+
+
+<li class="nav-item">
+<a href="packages.html" class="nav-link">الباقات والاسعار </a>
+</li>
+
+<li class="nav-item">
+<a href="gallery.html" class="nav-link">المعرض</a>
+</li>
+
+<li class="nav-item">
+<a href="contact.html" class="nav-link">تواصل معنا</a>
+</li>
+
+<li class="nav-item">
+<a href="login.html" class="nav-link login-btn">تسجيل الدخول</a>
+</li>
+<li class="nav-item">
+<a href="advice.html" class="nav-link login-btn">نصائح ودعم  </a>
+</li>
+</ul>
+
+</div>
+</nav>
+
+<div class="hamburger">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+</div>
+
+</div>
+</nav>
+</header>
+
+<main>
+
+<section class="page-header">
+<div class="container">
+<h1>تواصل معنا</h1>
+<p>تواصل مع فريقنا لحجز إقامة حيوانك الأليف أو لمعرفة المزيد عن خدماتنا</p>
+</div>
+</section>
+
+<section class="contact-content">
+
+<div class="container">
+
+<div class="contact-grid">
+
+<div class="contact-form-section">
+
+<h2>أرسل لنا رسالة</h2>
+<p>قم بتعبئة النموذج أدناه وسنقوم بالرد عليك خلال 24 ساعة.</p>
+
+<form id="contactForm" class="contact-form">
+
+<div class="form-row">
+
+<div class="form-group">
+<label for="firstName">الاسم الأول *</label>
+<input type="text" id="firstName" name="firstName" required>
+</div>
+
+<div class="form-group">
+<label for="lastName">اسم العائلة *</label>
+<input type="text" id="lastName" name="lastName" required>
+</div>
+
+</div>
+
+<div class="form-group">
+<label for="email">البريد الإلكتروني *</label>
+<input type="email" id="email" name="email" required>
+</div>
+
+<div class="form-group">
+<label for="phone">رقم الهاتف *</label>
+<input type="tel" id="phone" name="phone" required>
+</div>
+
+<div class="form-group">
+<label for="subject">الموضوع *</label>
+
+<select id="subject" name="subject" required>
+
+<option value="">الرجاء اختيار موضوع</option>
+<option value="booking">استفسار حجز</option>
+<option value="tour">حجز جولة</option>
+<option value="pricing">معلومات الأسعار</option>
+<option value="services">معلومات الخدمات</option>
+<option value="emergency">حالة طارئة</option>
+<option value="other">أخرى</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+<label for="petName">اسم الحيوان الأليف</label>
+<input type="text" id="petName" name="petName">
+</div>
+
+<div class="form-group">
+<label for="petBreed">سلالة الحيوان الأليف</label>
+<input type="text" id="petBreed" name="petBreed">
+</div>
+
+<div class="form-group">
+<label for="message">الرسالة *</label>
+<textarea id="message" name="message" rows="5" required></textarea>
+</div>
+
+<div class="form-group checkbox-group">
+
+<input type="checkbox" id="newsletter" name="newsletter">
+
+<label for="newsletter">
+أرغب في تلقي التحديثات والعروض الخاصة من Loving Homes
+</label>
+
+</div>
+
+<button type="submit" class="btn btn-primary btn-large">
+إرسال الرسالة
+</button>
+<div id="formMessage"></div>
+
+</form>
+
+<div id="formMessage" class="form-message"></div>
+
+</div>
+
+<div class="contact-info-section">
+
+<div class="contact-info-card">
+
+<h3>تواصل معنا</h3>
+
+<div class="contact-item">
+
+<div class="contact-icon">
+<i class="fas fa-phone"></i>
+</div>
+
+<div class="contact-details">
+
+<h4>الهاتف</h4>
+
+<p>
+<a href="tel:+85212345678">
++852 1234 5678
+</a>
+</p>
+
+<p class="contact-note">
+الاثنين - الجمعة: 8 صباحًا - 8 مساءً  
+السبت - الأحد: 9 صباحًا - 6 مساءً
+</p>
+
+</div>
+
+</div>
+
+<div class="contact-item">
+
+<div class="contact-icon">
+<i class="fas fa-envelope"></i>
+</div>
+
+<div class="contact-details">
+
+<h4>البريد الإلكتروني</h4>
+
+<p>
+<a href="mailto:info@lovinghomes.hk">
+info@lovinghomes.hk
+</a>
+</p>
+
+<p class="contact-note">
+نرد خلال 24 ساعة
+</p>
+
+</div>
+
+</div>
+
+<div class="contact-item">
+
+<div class="contact-icon">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+
+<div class="contact-details">
+
+<h4>الموقع</h4>
+
+<p>
+123 Tai Po Road<br>
+Tai Po, New Territories<br>
+Hong Kong
+</p>
+
+<p class="contact-note">
+الزيارة بموعد مسبق فقط
+</p>
+
+</div>
+
+</div>
+
+<div class="contact-item">
+
+<div class="contact-icon">
+<i class="fas fa-clock"></i>
+</div>
+
+<div class="contact-details">
+
+<h4>ساعات العمل</h4>
+
+<p>
+تسجيل الدخول: 8 صباحًا - 6 مساءً<br>
+تسجيل الخروج: 8 صباحًا - 6 مساءً<br>
+دعم طارئ 24/7
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="emergency-notice">
+
+<h3>
+<i class="fas fa-exclamation-triangle"></i>
+اتصال الطوارئ
+</h3>
+
+<p>
+للحالات الطارئة خارج ساعات العمل يرجى الاتصال:
+</p>
+
+<p class="emergency-number">
+
+<a href="tel:+85298765432">
++852 9876 5432
+</a>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="social-section">
+
+<div class="container">
+
+<h2 class="section-title">
+تابعنا
+</h2>
+
+<p>
+ابق على تواصل معنا للحصول على النصائح والصور الجميلة للحيوانات الأليفة
+</p>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+هل ترغب بزيارة الفندق؟
+</h2>
+
+<p>
+احجز جولة في منشأتنا وشاهد لماذا تحب الحيوانات الإقامة في Loving Homes
+</p>
+
+<div class="cta-buttons">
+
+<a href="tel:+85212345678" class="btn btn-primary btn-large">
+اتصل للحجز
+</a>
+
+<a href="#contactForm" class="btn btn-secondary btn-large">
+احجز جولة
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<footer class="footer">
+
+<div class="container">
+
+<div class="footer-content">
+
+<div class="footer-section">
+
+<div class="footer-logo">
+<i class="fas fa-paw"></i>
+<span>Loving Homes</span>
+</div>
+
+<p>
+فندق الكلاب الفاخر في هونغ كونغ يقدم أفضل رعاية وراحة لحيواناتكم الأليفة
+</p>
+
+</div>
+
+<div class="footer-section">
+
+<h4>
+روابط سريعة
+</h4>
+
+<ul>
+
+<li>
+<a href="index.html">الرئيسية</a>
+</li>
+
+<li>
+<a href="about.html">عن الفندق والخدمات</a>
+</li>
+
+<li>
+<a href="packages.html">الباقات والأسعار</a>
+</li>
+
+<li>
+<a href="advice.html">النصائح والدعم</a>
+</li>
+
+</ul>
+
+</div>
+
+<div class="footer-section">
+
+<h4>
+معلومات التواصل
+</h4>
+
+<p>
+<i class="fas fa-phone"></i>
++852 1234 5678
+</p>
+
+<p>
+<i class="fas fa-envelope"></i>
+info@lovinghomes.hk
+</p>
+
+<p>
+<i class="fas fa-map-marker-alt"></i>
+هونغ كونغ
+</p>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>
+© 2024 Loving Homes جميع الحقوق محفوظة
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+<button id="topBtn" onclick="scrollToTop()">⬆</button>
+</body>
+</html>
